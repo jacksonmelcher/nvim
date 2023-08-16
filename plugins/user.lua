@@ -10,4 +10,8 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
 }
