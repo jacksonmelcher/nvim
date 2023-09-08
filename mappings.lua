@@ -29,10 +29,11 @@ return {
     ["<C-j>"] = { "<cmd> TmuxNavigateDown<cr>", desc = "window down" },
     ["<C-k>"] = { "<cmd> TmuxNavigateUp<cr>", desc = "window up" },
     -- harpoon
-    ["<leader>h"] = { name = "Harpoon" },
-    ["<leader>ha"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", desc = "Harpoon Mark" },
+    ["<leader>h"] = { name = "Harpoon is working" },
+    ["<leader>hm"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", desc = "Harpoon Mark" },
     ["<leader>hr"] = { "<cmd>lua require('harpoon.mark').rm_file()<cr>", desc = "Harpoon Remove" },
     ["<leader>he"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", desc = "Harpoon Toggle Quick Menu" },
+    ["<C-e>"] = { "<cmd>lua require('harpoon.ui').nav_next()<cr>", desc = "Harpoon Next" },
   },
   t = {
     -- setting a mapping to false will disable it
