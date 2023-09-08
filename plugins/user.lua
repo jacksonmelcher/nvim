@@ -1,4 +1,3 @@
---TODO TEst
 return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
@@ -10,12 +9,4 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-  {
-    "christoomey/vim-tmux-navigator",
-    lazy = false,
-  },
-  {
-    "rust-lang/rust.vim",
-    init = function() vim.g.rustfmt_autosave = 1 end,
-  },
 }
