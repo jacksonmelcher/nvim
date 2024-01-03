@@ -20,7 +20,10 @@ return {
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
-    ["<leader>b"] = { name = "BUNCKER" },
+
+    -- ["<leader>P"] = { "_dP", name = "Paste over" },
+
+    -- ["<leader>b"] = { name = "BUNCKER" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     ["<C-h>"] = { "<cmd> TmuxNavigateLeft<cr>", desc = "window left" },
@@ -34,6 +37,9 @@ return {
     ["<leader>hr"] = { "<cmd>lua require('harpoon.mark').rm_file()<cr>", desc = "Harpoon Remove" },
     ["<leader>he"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", desc = "Harpoon Toggle Quick Menu" },
     ["<C-e>"] = { "<cmd>lua require('harpoon.ui').nav_next()<cr>", desc = "Harpoon Next" },
+    -- Ctrl + d and Ctrl + u center of page
+    ["<C-d>"] = { "<C-d>zz", desc = "Ctrl + d middle" },
+    ["<C-u>"] = { "<C-u>zz", desc = "Ctrl + u middle" },
   },
   t = {
     -- setting a mapping to false will disable it

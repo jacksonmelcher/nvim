@@ -101,6 +101,7 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    vim.api.nvim_set_keymap("n", "d", '"_d', { noremap = true, silent = true })
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
